@@ -1,0 +1,230 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond:regular,500,600,700,800,italic,500italic,600italic,700italic,800italic);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=DM+Serif+Display:regular,italic);
+@import url(https://fonts.googleapis.com/css?family=Gowun+Batang:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:regular,italic,600,600italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.logo{
+    width:200px;
+    height:60px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color:black;
+    color: white;
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+}
+.menu li a{
+    text-decoration: none;
+    font-family: "work sans";
+    font-weight: 500;
+    color: whitesmoke;
+    margin-right: 15px;
+}
+.menu li a:hover{
+    text-decoration: underline;
+    color: red;
+}
+.section h1{
+    text-align: center;
+    color: rgb(17, 0, 255);
+    font-size: 60px;
+    font-family:sans-serif;
+}
+.sec{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #E01A4F; 
+}
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.overlay-text h1 a{
+    font-size: 60px;
+    font-family: "Gowun Batang";
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.sec a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.overlay-text h2 a{
+    font-size: 30px;
+    font-family: "Gowun Batang";
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.overlay-text h3 a{
+    font-size: 20px;
+    font-family: "Gowun Batang";
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.book-now-box{
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    background-color:white;
+}
+.book-now-box h3 {
+    margin: 0;
+}
+.about {
+    position: relative;
+    width: 30%;
+    display: inline-block;
+    color: black;
+    background-color: #ff6500;
+    margin: 80px;
+    padding: 75px 250px 70px 60px;
+    font-weight: 500;
+}
+.left h1 {
+    margin: 0;
+    text-align: left;
+    font-family: "crimson text";
+    font-size: 40px;
+}
+.left p {
+    font-weight: 500;
+    line-height: 2.4;
+    font-size: 16px;
+}
+.right {
+    position: absolute;
+    top: 800px;
+    right: 350px;
+    left: 780px;
+    bottom: 800px;
+}
+.services {
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+    margin-left:60px;
+    font-family: "Nunito";
+    padding-bottom: 70px;
+}
+.services a:hover{
+    text-decoration: underline;
+    color: red;
+}
+.serv {
+    text-align: center;
+    color: white;
+    font-family: "Nunito";
+    font-size: 40px;
+}
+.service {
+    width: 33.33%;
+}
+.service img {
+    width: 80%;
+    display: block;
+}
+.service h2,.service p{
+    color: white;
+    text-align: left;
+}
+.service button{
+    text-align: left;
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-family: "Nunito";
+    font-weight: 500;
+    font-size: 15px;
+}
+.service button a{
+    color: black;
+    text-decoration: none;
+}
+.service h2::after{
+    content: "";
+    display: block;
+    width: 80%; 
+    height: 1px;
+    background: white;
+    margin:5px 0px 0px 0px;
+}
+.contact{
+    background-color:#ff6500;
+    font-family: "Montserrat";
+    color: black;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 60px 0px 60px 0px;
+}
+.con1 h1{
+    font-size: 30px;
+}
+.con2 a{
+    color: black;
+    text-decoration: none; 
+}
+.con2 .social-logos{
+    display: inline-flexbox;
+    flex-direction: column;
+}
+.con2 .social-logos img{
+    width: 25px;
+    height: 25px;
+    margin: 20px 20px 0px -5px;
+}
+.con3 p{
+    font-weight: 500;
+}
+.con3 form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.con3 input[type="email"] {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    border: 2px solid #000;
+    background-color:#ff6500;
+}
+.con3 input[type="submit"] {
+    background-color: black; 
+    color: white;
+    margin-top: -7px;
+    margin-left: 10px;
+    font-family:"Montserrat";
+    padding: 10px 20px;
+    width: calc(100%-40px);
+    font-size: 15px;
+}
+input[type="email"]::placeholder {
+    color: black;
+    font-size: 15px;
+    margin-right: 10px;
+}
